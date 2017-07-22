@@ -1,0 +1,33 @@
+---
+# defaults file for ansible-role-ove-apache
+OVE_VERSION: 0.0.1a1
+OVE_REPO_NAMESPACE: PMRAM
+OVE_USER_HOME:/root
+OVE_DIR: "{{ OVE_USER_HOME }}/.ove"
+OVE_INSTALLER_SERVICE: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/master
+#OVE_INSTALLER_SERVICE="@OVE_INSTALLER_SERVICE@"
+#OVE meta data service for validated OVE environments
+OVE_ENVS_INFO_SERVICE: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/master/envsinfo/candidates.txt
+#OVE_ENVS_INFO_SERVICE="@OVE_ENVS_INFO_SERVICE@"
+OVE_BROADCAST_SERVICE: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/broadcast/broadcast.txt
+#OVE_BROADCAST_SERVICE="@OVE_BROADCAST_SERVICE@"
+OVE_GIT_URL: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}
+ove_bin_folder: "{{ OVE_DIR }}/bin"
+ove_src_folder: "{{OVE_DIR }}/src"
+ove_ext_folder: "{{OVE_DIR }}/ext"
+ove_bash_folder: "{{ OVE_DIR }}/src/bash"
+ove_tmp_folder: "{{ OVE_DIR }}/tmp"
+ove_stage_folder: "{{ ove_tmp_folder }}/stage"
+ove_zip_file: "{{ ove_tmp_folder }}/res-{{ OVE_VERSION }}.zip"
+ove_etc_folder: "{{ OVE_DIR }}/data/etc"
+ove_var_folder: "{{ OVE_DIR }}/var"
+ove_current_env_folder: "{{ OVE_DIR }}/data/env/"
+ove_dotenvs_folder: "{{ OVE_DIR }}/data/.envs/"
+ove_config_file: "{{ ove_etc_folder }}/config"
+#ove_bash_profile: "${HOME}/.bash_profile
+#ove_profile: "${HOME}/.profile
+#ove_bashrc: "${HOME}/.bashrc"
+#ove_platform: $(uname)
+add_www: false
+disable_default_site: false
+letsencrypt_tls: false
