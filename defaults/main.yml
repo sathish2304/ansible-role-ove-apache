@@ -1,17 +1,17 @@
 ---
 # defaults file for ansible-role-ove-apache
 OVE_VERSION: 0.0.1a1
-OVE_REPO_NAMESPACE: PMRAM
-OVE_USER_HOME:/root
+OVE_REPO_NAMESPACE: ansible-role-ove-apache.git 
+OVE_USER_HOME: /root
 OVE_DIR: "{{ OVE_USER_HOME }}/.ove"
-OVE_INSTALLER_SERVICE: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/master
+OVE_INSTALLER_SERVICE: https://github.com/sathish2304/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/master
 #OVE_INSTALLER_SERVICE="@OVE_INSTALLER_SERVICE@"
 #OVE meta data service for validated OVE environments
-OVE_ENVS_INFO_SERVICE: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/master/envsinfo/candidates.txt
+OVE_ENVS_INFO_SERVICE: https://github.com/sathish2304/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/master/envsinfo/candidates.txt
 #OVE_ENVS_INFO_SERVICE="@OVE_ENVS_INFO_SERVICE@"
-OVE_BROADCAST_SERVICE: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/broadcast/broadcast.txt
+OVE_BROADCAST_SERVICE: https://github.com/sathish2304/{{ OVE_REPO_NAMESPACE }}/ove-installer/raw/broadcast/broadcast.txt
 #OVE_BROADCAST_SERVICE="@OVE_BROADCAST_SERVICE@"
-OVE_GIT_URL: http://wosggitlab.wipro.com/{{ OVE_REPO_NAMESPACE }}
+OVE_GIT_URL: https://github.com/sathish2304/{{ OVE_REPO_NAMESPACE }}
 ove_bin_folder: "{{ OVE_DIR }}/bin"
 ove_src_folder: "{{OVE_DIR }}/src"
 ove_ext_folder: "{{OVE_DIR }}/ext"
